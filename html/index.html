@@ -12,37 +12,48 @@
 					<a href="./" title="top">TOP</a>
 				</li>
 				<li>
-					<a href="#" title="about">まごたくについて</a>
+					<a href="#about" title="about">まごたくについて</a>
 				</li>
 				<li>
-					<a href="#" title="contact">連絡</a>
+					<a href="#contact" title="contact">連絡</a>
 				</li>
 			</ul>
 		</div>
 		<div class="contents">
-			<section>
+			<section class="about">
+				<h2 class="sub_title">まごたく<wbr>とは<wbr></h2>
+			</section>
+			<!-- ご連絡用のフォーム -->
+			<section id="contact">
 				<h2 class="sub_title">ご連絡</h2>
 				<!-- フォーム送信の設定をして欲しい -->
 				<form class="formrun" action="#" method="POST" target="_top">
 					<div class="form_container">
-						<label for="">名前</label>
-						<input placeholder="お名前" type="text">
+						<label class="form_label" for="">名前</label>
+						<input class="form_input" placeholder="お名前" type="text">
 					</div>
 					<div class="form_container">
-						<label for="">Email</label>
-						<input placeholder="メールアドレス" type="text">
+						<label class="form_label" for="">Email</label>
+						<input class="form_input" placeholder="メールアドレス" type="text">
 					</div>
 					<div class="form_container">
-						<label for="">Tell</label>
-						<input placeholder="電話番号" type="text">
+						<label class="form_label" for="">Tell</label>
+						<input class="form_input" placeholder="電話番号" type="text">
 					</div>
-					<div class="form_container">
-						<label for="">DESCRIPTION</label>
-						<input placeholder="お問い合わせ内容" type="text">
+					<div class="textarea_container">
+						<label class="form_label" for="">DESCRIPTION</label>
+						<textarea class="form_textarea" cols="30" name="お問い合わせ内容" placeholder="お問い合わせ内容"></textarea>
 					</div>
 					<button type="submit">送信</button>
 				</form>
 			</section>
+			<section class="footer">
+				<p class="copyright">
+					Copyright ®︎ Anal Tamura Co.Ltd All Rights Reserved.
+				</p>
+			</section>
+			<aside class="sub_menu">
+			</aside>
 		</div>
 	</body>
 </html>

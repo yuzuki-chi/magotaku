@@ -43,7 +43,35 @@ a:hover{
     position: relative;
     z-index: 50;
     width: 960px;
-    margin: 100px auto 200px auto;
+    margin: 200px auto 200px auto;
+}
+.about{
+    margin-top: 0;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.section_about{
+    display: flex;
+}
+.about_img{
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 5;
+}
+img{
+    border-style: none;
+    max-width: 100%;
+    outline: none;
+}
+.about_text-area{
+    flex-direction: column;
+    margin-left: 60px;
+    display: flex;
+}
+.about_text{
+    font-size: 20px;
+    margin-bottom: 60px;
 }
 input, button, textarea{
     margin: 0;

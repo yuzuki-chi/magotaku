@@ -32,15 +32,18 @@ li > a{
     text-align: center;
     padding: 14px 16px;
 }
-a{
+.a_text{
     text-decoration: none;
     color: black;
 }
-a:hover{
+li > a_text :hover{
     border-bottom: 2px solid black;
 }
 .inner{
     overflow: hidden;
+    justify-content:
+    space-between;
+    align-items: center;
 }
 .inner > li{
     padding: 0 26px;
@@ -49,6 +52,8 @@ a:hover{
 }
 .nav{
     box-sizing: border-box;
+    text-align: right;
+    float: left;
 }
 .contents{
     position: relative;
@@ -57,6 +62,13 @@ a:hover{
     margin-right: auto;
     margin-left: auto;
     background-clip: border-box;
+}
+#create{
+}
+.create_text{
+    text-decoration: none;
+}
+.create_button{
 }
 #about{
     margin-top: 0;

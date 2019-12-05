@@ -1,5 +1,7 @@
 body{
     margin: 0;
+}
+.font{
     font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "sans-serif";
 }
 header footer section nav{
@@ -38,8 +40,7 @@ li > a_text :hover{
 }
 .inner{
     overflow: hidden;
-    justify-content:
-    space-between;
+    justify-content:space-between;
     align-items: center;
 }
 .inner > li{
@@ -60,11 +61,7 @@ li > a_text :hover{
     margin-left: auto;
     background-clip: border-box;
 }
-.top_img{
-    object-fit: cover;
-    width: 100%;
-    position: relative;
-}
+
 .img_text{
     position: absolute;
     top: 50%;
@@ -191,6 +188,7 @@ input, button, textarea{
     cursor: pointer;
     font-weight: 700;
     margin-top: 20px;
+    transition: all 0.3s ease 0s;
 }
 button, input{
     overflow: visible;
@@ -212,10 +210,29 @@ textarea{
     text-align: center;
     color: white;
 }
+.footer_text{
+    float: left;
+    padding: 0 26px;
+}
+.footer_text > a{
+    color: white;
+    font-size: 11px;
+    letter-spacing: 0.05;
+    text-decoration: none;
+}
+.footer_container{
+    align-items: center;
+}
 .sub_menu{
     position: fixed;
     top: 0;
     right: 0;
     max-width: 0;
     background-color: black;
+}
+.formrun > button:hover{
+    background-color: #2EE59D;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
 }

@@ -1,9 +1,6 @@
 body{
-    min-width: 980px;
+    margin: 0;
     font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "sans-serif";
-    background: white;
-    color: black;
-    text-align: left;
 }
 header footer section nav{
     display: block;
@@ -62,6 +59,20 @@ li > a_text :hover{
     margin-right: auto;
     margin-left: auto;
     background-clip: border-box;
+}
+.top_img{
+    object-fit: cover;
+    width: 100%;
+    position: relative;
+}
+.img_text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: white;
+}
+.div_color{
+    background: white;
 }
 #create{
 }
@@ -188,14 +199,18 @@ textarea{
     overflow: auto;
 }
 .footer{
-    margin-top: 200px;
+    padding-left: 64px;
+    padding-bottom: 55px;
+    padding-right: 64px;
+    padding-top: 100px;
     margin: right;
-    padding-bottom: 50px;
+    background-color: black;
 }
 .copyright{
     font-size: 11px;
     letter-spacing: 0.05em;
     text-align: center;
+    color: white;
 }
 .sub_menu{
     position: fixed;

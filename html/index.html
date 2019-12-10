@@ -8,37 +8,41 @@
 	</head>
 	<body>
 		<header>
-			<div>
-				<h1 class="font">AF Tamura</h1>
-			</div>
-			<div class="inner">
-				<nav class="nav">
-					<ul>
-						<li>
-							<a class="a_text font" href="./" title="top">TOP</a>
-						</li>
-						<li>
-							<a class="a_text" href="#about" title="about">まごたくについて</a>
-						</li>
-						<li>
-							<a class="a_text" href="#contact" title="contact">連絡</a>
-					    </li>
-						<li>
-							<a class="a_text" href="#create" title="creat">登録する</a>
-						</li>
-						<li>
-							<a class="a_text" href="#rogin" title="rogin">ログイン</a>
-						</li>
-					</ul>
-				</nav>
+			<div class="header">
+				<div id="top">
+					<h1 class="font">AF Tamura</h1>
+				</div>
+				<div class="inner">
+					<nav class="nav">
+						<ul>
+							<li>
+								<a class="a_text" href="#top" title="top">TOP</a>
+							</li>
+							<li>
+								<a class="a_text" href="#about" title="about">まごたくについて</a>
+							</li>
+							<li>
+								<a class="a_text" href="#contact" title="contact">連絡</a>
+							</li>
+							<li>
+								<a class="a_text" href="#create" title="creat">登録する</a>
+							</li>
+							<li>
+								<a class="a_text" href="#rogin" title="rogin">ログイン</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
 			</div>
 		</header>
-		<div>
-			i
+		<div class="bg_img">
+			<img src="./top.jpg" alt="トップ画像">
 		</div>
-		いつもの買い物が
-		<br>
-		ラクで手間いらず
+		<div class="top_text">
+			いつもの買い物が
+			<br>
+			ラクで手間いらず
+		</div>
 		<main class="contents">
 				
 
@@ -49,33 +53,40 @@
 			<!-- 会員登録画面 -->
 			<section id="create">
 				<div>
-					<a href="">
-						<div>
-							<div class="a_text font">
-								<h3>配達の仕事をしたい人向け</h3>
-								<h2>登録して仕事をする</h2>
-							</div>
-							<div class="create_text">
-								<span >登録する</span>
-							</div>
-						</div>
-					</a>
+					<div class="a_text font">
+						<h3>配達の仕事をしたい人向け</h3>
+						<h2>登録して仕事をする</h2>
+					</div>
+					<div class="create_text">
+						<span>登録する</span>
+						<span>ログイン</span>
+					</div>
+				</div>
+				<div>
+					<div>
+						<h3>配達を依頼したい人</h3>
+						<h2>登録して仕事を依頼する</h2>
+					</div>
+					<div class="create_text">
+						<span>登録する</span>
+						<span>ログイン</span>
+					</div>
 				</div>
 			</section>
 			<!-- まごたくについての説明 -->
 			<section id="about" class="about">
 				<h2 class="sub_title">まごたくとは?</h2>
 				<div class="section_about">
-					<div>
+					<div class="about_figure">
 						<figure class="about_img">
-							<img src="about.jpg" alt="おばあちゃんの写真" width="400">
+							<img src="about.jpg" alt="おばあちゃんの写真" width="500">
 						</figure>
 					</div>
 					<div class="about_text-area">
 						<div class="about_text">
-							<p>老人の生活を助けるサービスです</p>
-							<p>若者に行ってもらいたい仕事を頼み、</p>
-							<p>自宅まで荷物を届けてもらえます</p>
+							老人の生活を助けるサービスです<br>
+							若者に行ってもらいたい仕事を頼み、<br>
+							自宅まで荷物を届けてもらえます<br>
 						</div>
 					</div>
 				</div>
@@ -115,6 +126,9 @@
 					</div>
 					<div class="footer_text">
 						<a href="#">利用規約</a>
+					</div>
+					<div class="footer_text">
+						<a href="#">プライバシー</a>
 					</div>
 				</div>
 			</section>

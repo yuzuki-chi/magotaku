@@ -7,6 +7,9 @@ body{
 header footer section nav{
     display: block;
 }
+a{
+    text-decoration: none;
+}
 h1{
     margin: 0;
     width: auto;
@@ -64,6 +67,7 @@ li > a{
     float: left;
 }
 .bg_img{
+    align-items: center;
     width: 100%;
     max-width: 1920px;
     position: relative;
@@ -236,6 +240,28 @@ textarea{
     padding-top: 100px;
     margin: right;
     background-color: black;
+}
+.footer_link{
+    position: relative;
+}
+.footer_link > ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.my-icon{
+    color: white;
+
+}
+.footer_icon{
+    margin: 0%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.footer_icon > a{
+    color: white;
+    font-size: 30px;
 }
 .copyright{
     font-size: 11px;

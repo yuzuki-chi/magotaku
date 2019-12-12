@@ -1,4 +1,6 @@
 <?php
+header("Access-Control-Allow-Origin: https://yuzuki-chi.github.io");
+
 mb_language('japanese');
 mb_internal_encoding('UTF-8');
 if ($json = file_get_contents('php://input'))
@@ -23,12 +25,9 @@ $body = "お名前:".$name."<br/>".
 try {
 	$success = mb_send_mail($atAddress, "問い合わせ", $body, 'From: ' . $fromAddress);
 	if($success){
-    $rand = int rand (0, 100);
-    if ($rand < 50) {
-      echo "あなる（ﾎﾞﾛﾝ）";
-    } else {
-      echo "送信しました";
-    }
+    $rand = rand (0, 100);
+    if ($rand < 50) echo "あなる（ﾎﾞﾛﾝ）";
+    else echo "送信しました";
 	}
 } catch (Exception $e) {
 	echo "予期せぬエラーが発生しました";

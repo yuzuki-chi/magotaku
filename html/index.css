@@ -142,7 +142,7 @@ img{
     line-height: 2;
     margin-top: 100px;
 }
-input, button, textarea{
+input, input, textarea{
     margin: 0;
     padding: 0;
     background: none;
@@ -213,7 +213,7 @@ input, button, textarea{
     font-size: 15px;
     resize: none;
 }
-.formrun > button{
+.formrun > input{
     position: absolute;
     right: 0;
     background-color: black;
@@ -227,7 +227,7 @@ input, button, textarea{
     margin-top: 20px;
     transition: all 0.3s ease 0s;
 }
-button, input{
+input, input{
     overflow: visible;
 }
 textarea{
@@ -290,7 +290,7 @@ textarea{
     max-width: 0;
     background-color: black;
 }
-.formrun > button:hover{
+.formrun > input:hover{
     background-color: #2EE59D;
     box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
     color: #fff;

@@ -4,7 +4,6 @@
 		<title>まごたく｜まごの宅急便</title>
 		<meta http-equiv="content-type" charset="utf-8">
 		<link rel="stylesheet" href="./index.css">
-		<script type="text/javascript" src="index.js"></script>
 		<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 	</head>
 	<body>
@@ -97,25 +96,27 @@
 			<section id="contact">
 				<h2 class="sub_title">ご連絡</h2>
 				<!-- フォーム送信の設定をして欲しい -->
-				<form class="formrun" action="#" method="POST" target="_top">
+				<!-- <form class="formrun" action="#" method="POST" target="_top"> -->
 					<div class="form_container">
 						<label class="form_label" for="">名前</label>
-						<input class="form_input" placeholder="お名前" type="text">
+						<input class="form_input" id="name" placeholder="お名前" type="text">
 					</div>
 					<div class="form_container">
-						<label class="form_label" for="">Email</label>
+						<label class="form_label" id="email" for="">Email</label>
 						<input class="form_input" placeholder="メールアドレス" type="text">
 					</div>
 					<div class="form_container">
 						<label class="form_label" for="">Tell</label>
-						<input class="form_input" placeholder="電話番号" type="text">
+						<input class="form_input" id="phone" placeholder="電話番号" type="text">
 					</div>
 					<div class="textarea_container">
 						<label class="form_label" for="">DESCRIPTION</label>
-						<textarea class="form_textarea" cols="30" name="お問い合わせ内容" placeholder="お問い合わせ内容"></textarea>
+						<textarea class="form_textarea" id="message" cols="30" name="お問い合わせ内容" placeholder="お問い合わせ内容"></textarea>
 					</div>
-					<button type="submit">送信</button>
-				</form>
+					<div class="formrun">
+						<input type="submit" id="form_subm" value="送信">
+					</div>
+				<!-- </form> -->
 			</section>
 			<section class="footer">
 				<div class="footer_link">
@@ -158,5 +159,6 @@
 			<aside class="sub_menu">
 			</aside>
 		</main>
+	<script type="text/javascript" src="index.js"></script>
 	</body>
 </html>

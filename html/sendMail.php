@@ -23,7 +23,12 @@ $body = "お名前:".$name."<br/>".
 try {
 	$success = mb_send_mail($atAddress, "問い合わせ", $body, 'From: ' . $fromAddress);
 	if($success){
-	    echo "success";
+    $rand = int rand (0, 100);
+    if ($rand < 50) {
+      echo "あなる（ﾎﾞﾛﾝ）";
+    } else {
+      echo "送信しました";
+    }
 	}
 } catch (Exception $e) {
 	echo "予期せぬエラーが発生しました";

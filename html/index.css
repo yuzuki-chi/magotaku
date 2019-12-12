@@ -73,6 +73,7 @@ li > a{
     position: relative;
 }
 .top_text{
+    font-family: "Nikukyu";
     position: absolute;
 }
 .contents{

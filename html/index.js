@@ -12,7 +12,7 @@ subm.addEventListener("click", function(){
 	let str = {'name':name, 'fromAddress':fromAddress, 'phone':phone, 'message':message};
 	let json = JSON.stringify(str);
 	let req = new XMLHttpRequest();
-	req.open('POST', './sendMail.php', true);
+	req.open('POST', 'https://citron-tree.jp/private/magotaku_tmp/sendMail.php', true);
 	req.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
 	req.send(json);
 	req.onload=function(){

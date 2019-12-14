@@ -8,76 +8,73 @@
 		<link href="https://fonts.googleapis.com/earlyaccess/nikukyu.css" rel="stylesheet">
 	</head>
 	<body>
-		<header>
+		<header id="top">
 			<div class="header">
-				<div id="top">
+				<div class="top">
 					<h1 class="font">AF Tamura</h1>
-				</div>
-				<div class="inner">
-					<nav class="nav">
-						<ul>
-							<li>
-								<a class="a_text" href="#top" title="top">TOP</a>
-							</li>
-							<li>
-								<a class="a_text" href="#about" title="about">まごたくについて</a>
-							</li>
-							<li>
-								<a class="a_text" href="#contact" title="contact">連絡</a>
-							</li>
-							<li>
-								<a class="a_text" href="#create" title="creat">登録する</a>
-							</li>
-							<li>
-								<a class="a_text" href="#rogin" title="rogin">ログイン</a>
-							</li>
-						</ul>
-					</nav>
+				</div >
+				<div class="header__menu">
+					<div class="menu__item">
+						<a class="a_text" href="#top" title="top">TOP</a>
+					</div>
+					<div class="menu__item">
+						<a class="a_text" href="#about" title="about">まごたくについて</a>
+					</div>
+					<div class="menu__item">
+						<a class="a_text" href="#contact" title="contact">連絡</a>
+					</div>
+					<div class="menu__item">
+						<a class="a_text btn-flat" href="#create" title="creat">登録する</a>
+					</div>
+					<div class="menu__item">
+						<a class="a_text btn-flat-g" href="#rogin" title="rogin">ログイン</a>
+					</div>
 				</div>
 			</div>
 		</header>
-		<div class="bg_img">
-			<img src="./top.jpg" alt="トップ画像">
-		</div>
-		<div class="top_text">
-			イツモノカイモノガ
-			<br>
-			ラクデテマイラズ
-		</div>
 		<main class="contents">
-
 				<a href="" data-baseweb></a>
 			<section>
-
+				<div class="bg_img">
+					<img src="./top.jpeg" alt="トップ画像">
+				</div>
+				<div class="top_text">
+					イツモノカイモノガ
+					<br>
+					ラクデテマイラズ
+				</div>
 			</section>
 			<!-- 会員登録画面 -->
-			<section id="create">
-				<div class="create_item work">
-					<div class="create_title">
-						<h3>おてつだいをしたい人向け</h3>
-						<h2>おてつだいを探す</h2>
+			<section id="create" class="create">
+				<h2 class="sub_title">登録する</h2>
+				<div class="create__container">
+					<div class="create_item work">
+						<div class="create_title">
+							<h3>おてつだいをしたい人向け</h3>
+							<h2>おてつだいを探す</h2>
+						</div>
+						<!-- <div class="create_text">
+							<span>登録する</span>
+						</div> -->
+						<div class="icon_bar">
+							<a href="">
+								<i class="fas fa-chevron-circle-right icon-nav my-icon fa-2x"></i>
+							</a>
+						</div>
 					</div>
-					<!-- <div class="create_text">
-						<span>登録する</span>
-					</div> -->
-					<div class="icon_bar">
-						<a href="">
-							<i class="fas fa-chevron-circle-right icon-nav my-icon fa-2x"></i>
-						</a>
-					</div>
-				</div>
-				<div class="create_item user">
-					<div class="create_title">
-						<h3>配達を依頼したい人</h3>
-						<h2>仕事を依頼する</h2>
-					</div>
-					<!-- <div class="create_text">
-						<span>登録する</span>
-					</div> -->
-					<div class="icon_bar">
-						<a href="">
-							<i class="fas fa-chevron-circle-right icon-nav my-icon fa-2x"></i>
-						</a>
+					<div class="create_item user">
+						<div class="create_title">
+							<h3>配達を依頼したい人</h3>
+							<h2>仕事を依頼する</h2>
+						</div>
+						<!-- <div class="create_text">
+							<span>登録する</span>
+						</div> -->
+						<div class="icon_bar">
+							<a href="">
+								<i class="fas fa-chevron-circle-right icon-nav my-icon fa-2x"></i>
+							</a>
+						</div>
 					</div>
 				</div>
 			</section>

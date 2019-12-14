@@ -378,10 +378,15 @@ template {
   display: none;
 }
 
+
+
+
+
+
 .font{
     font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "sans-serif";
 }
-header footer section nav{
+header footer section{
     display: block;
 }
 a{
@@ -392,32 +397,56 @@ h1{
     width: auto;
 }
 header{
-    width: 88%;
-    position: relative;
-    margin-right: auto;
-    margin-left: auto;
+    width: 100%;
+    position: absolute;
+    margin: 0 auto;
+    z-index: 500;
 }
 .header{
     display: flex;
     justify-content: space-between;
     max-width: 1600px;
-    margin: auto;
+    margin-top: 0;
+    padding-top: 2%;
+    margin-right: auto;
+    margin-left: auto;
+    width: 95%;
 }
-#top{
+.top{
+    border: double 8px;
     display: flex;
-    line-height: 2.5;
+}
+.btn-flat{
+    padding: 0.3em 0.5em;
+    border-radius: 3px;
+    transition: .4s;
+}
+.btn-flat:hover {
+  background: black;
+  color: white;
+}
+.btn-flat-g {
+  padding: 0.3em 0.5em;
+  border-radius: 3px;
+  transition: .4s;
+}
+.btn-flat-g:hover{
+  background: #F13F79;
+  color: white;
 }
 ul{
     list-style: none;
     float: none;
     overflow: hidden;
+    padding: 0;
+    margin: 0;
+    vertical-align: center;
 }
 li{
     float: left;
 }
 li > a{
     display:block;
-    text-align: center;
     padding: 14px 16px;
 }
 .a_text{
@@ -425,33 +454,28 @@ li > a{
     color: black;
     display: inline-block;
 }
-.inner{
+.header__menu{
     display: block;
     overflow: hidden;
-    justify-content:space-between;
-    align-items: center;
     position: relative;
     justify-content: end;
-}
-.inner > li{
-    position: relative;
-    padding: 0 26px;
-    height: 60px;
-    line-height: 60px;
-}
-.nav{
-    box-sizing: border-box;
     float: left;
 }
+.menu__item{
+    display: inline-block;
+    vertical-align: justify;
+}
+.menu__item > a{
+    padding: 10px;
+}
 .bg_img{
-    align-items: center;
+    margin: 0 auto;
     width: 100%;
     max-width: 1920px;
-    position: relative;
 }
 .top_text{
     font-family: "Nikukyu";
-    position: absolute;
+    position: relative;
 }
 .contents{
     position: relative;
@@ -461,7 +485,6 @@ li > a{
     margin-left: auto;
     background-clip: border-box;
 }
-
 .img_text{
     position: absolute;
     top: 50%;
@@ -473,6 +496,12 @@ li > a{
 }
 #create{
     max-width: 1600px;
+}
+.create{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.create__container{
     display: flex;
     justify-content: center;
     margin: 50px auto;
@@ -512,12 +541,9 @@ li > a{
     color: white;
     margin-top: 0px;
 } */
-.icon_nav{
-    position: relative;
-    display: flex;
-}
 .icon_bar{
     justify-items: right;
+    margin-top: 5%;
 }
 .icon_bar > a{
     margin-left: 85%;
@@ -584,7 +610,9 @@ input, input, textarea{
     position: relative;
     z-index: 100;
     width: 960px;
-    margin: 100px auto 200px auto;
+    padding-top: 5%;
+    padding-bottom: 15%;
+    margin: 0 auto;
 }
 .formrum{
     position: relative;
@@ -674,9 +702,11 @@ textarea{
 
 }
 .footer_icon{
-    margin: 0%;
     text-align: center;
-    margin-bottom: 30px;
+    margin-top: 1%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 1%;
 }
 .footer_icon > a{
     color: white;

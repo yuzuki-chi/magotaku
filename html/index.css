@@ -380,8 +380,12 @@ template {
 a{
   outline: none;
 }
-
-
+.padding-8{
+  padding: 8px;
+}
+.border-8{
+  border: double 8px;
+}
 .relative{
   position: relative;
 }
@@ -396,6 +400,15 @@ a{
 }
 .font{
     font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "sans-serif";
+}
+.b-white{
+  background: white;
+}
+.color-black{
+  color: black;
+}
+.color-white{
+  color: white;
 }
 header footer section{
     display: block;
@@ -419,14 +432,12 @@ header{
     margin-top: 0;
     position: fixed;
     width: 100%;
-    background-color: #fff;
     height: 70px
 }
 #top{
     background-color: #fff;
 }
 .top{
-    border: double 8px;
     display: flex;
     position: absolute;
     top: 8px;
@@ -437,9 +448,18 @@ header{
     border-radius: 3px;
     transition: .4s;
 }
+.btn-flat2{
+  padding: 0.3em 0.5em;
+  border-radius: 3px;
+  transition: .4s;
+}
 .btn-flat:hover {
   background: black;
   color: white;
+}
+.btn-flat2:hover{
+  background: white;
+  color: black;
 }
 .btn-flat-g {
   padding: 0.3em 0.5em;
@@ -467,7 +487,6 @@ li > a{
 }
 .a_text{
     text-decoration: none;
-    color: black;
     display: inline-block;
 }
 .header__menu{
@@ -567,8 +586,6 @@ li > a{
 }
 .icon_bar > a{
     margin-left: 85%;
-}
-.create_button{
 }
 #about{
     margin-top: 0;
@@ -770,6 +787,10 @@ textarea{
 /* create.html */
 .top > a{
   color: black;
+}
+.create-top{
+  background-color: black;
+  color: white;
 }
 .create-title{
     font-size: 60px;

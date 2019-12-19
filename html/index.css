@@ -404,17 +404,25 @@ header{
 }
 .header{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     max-width: 1600px;
     margin-top: 0;
     padding-top: 2%;
+    position: fixed;
     margin-right: auto;
     margin-left: auto;
-    width: 95%;
+    width: 100%;
+    background-color: #fff;
+}
+#top{
+    background-color: #fff;
 }
 .top{
     border: double 8px;
     display: flex;
+    position: absolute;
+    top: 5px;
+    left: 5px;
 }
 .btn-flat{
     padding: 0.3em 0.5em;

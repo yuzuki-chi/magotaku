@@ -796,3 +796,18 @@ textarea{
 .create-form-title > span{
   color: #F13F79;
 }
+.create-textarea{
+ display: inline-block;
+ box-sizing: border-box;
+ vertical-align: middle;
+ width: 100%;
+ height: 200px;
+ padding: 13px 0;
+ line-height: 1.6;
+ letter-spacing: 0.08em;
+ font-size: 20px;
+ resize: none;
+ background-color: #efefef;
+ padding-left: 20px;
+ margin-bottom: 40px;
+}

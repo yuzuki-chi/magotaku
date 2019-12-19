@@ -377,7 +377,9 @@ template {
 [hidden] {
   display: none;
 }
-
+a{
+  outline: none;
+}
 
 
 
@@ -753,3 +755,11 @@ textarea{
     color: #fff;
     transform: translateY(-7px);
 }
+
+
+
+/* create.html */
+.top > a{
+  color: black;
+}
+

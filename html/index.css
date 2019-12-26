@@ -373,7 +373,6 @@ template {
 /**
  * Add the correct display in IE 10.
  */
-
 [hidden] {
   display: none;
 }
@@ -392,6 +391,9 @@ a{
 .flex{
   display: flex;
 }
+.fixid{
+  position: fixed;
+}
 .ta-r{
   text-align: right;
 }
@@ -401,6 +403,9 @@ a{
 .font{
     font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "sans-serif";
 }
+.float-left{
+  float: left;
+}
 .b-white{
   background: white;
 }
@@ -409,6 +414,16 @@ a{
 }
 .color-white{
   color: white;
+}
+.m-widht_1600{
+  max-width: 1600px;
+}
+.m-auto{
+  margin-right: auto;
+  margin-left: auto;
+}
+.fs-20{
+  font-size: 20px;
 }
 header footer section{
     display: block;
@@ -584,7 +599,7 @@ li > a{
     justify-items: right;
     margin-top: 5%;
 }
-.icon_bar > a{
+.icon_bar > i{
     margin-left: 85%;
 }
 #about{
@@ -793,7 +808,7 @@ textarea{
   color: white;
 }
 .create-title{
-    font-size: 60px;
+    font-size: 55px;
     font-weight: 700;
     letter-spacing: 0.05em;
 }
@@ -812,7 +827,7 @@ textarea{
 .create-form-title{
   margin-left: 2%;
   margin-top: 100px;
-  font-size: 30px;
+  font-size: 25px;
 }
 .create-form-title > span{
   color: #F13F79;
@@ -831,4 +846,25 @@ textarea{
  background-color: #efefef;
  padding-left: 20px;
  margin-bottom: 40px;
+}
+.contact{
+    z-index: 100;
+    width: 960px;
+    padding-top: 150px;
+    padding-bottom: 250px;
+    margin: 0 auto;
+}
+
+
+/* search.html */
+.search_contents{
+  width: 980px;
+}
+.main_search{
+  width: 620px;
+  margin-left: 20px;
+}
+.side__search{
+  width: 320px;
+  margin-left: 20px;
 }

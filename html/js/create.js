@@ -1,6 +1,6 @@
 //YOUNG SUBMIT BUTTON
-var subm = document.getElementById("young_create_subm");
-subm.addEventListener("click", function(){
+var young_create_subm = document.getElementById("young_create_subm");
+young_create_subm.addEventListener("click", function(){
 	// お名前
     let name = document.getElementById("name").value;
     //　年齢
@@ -28,8 +28,8 @@ subm.addEventListener("click", function(){
 })
 
 //OLD SUBMIT BUTTON
-var subm = document.getElementById("old_create_subm");
-subm.addEventListener("click", function(){
+var old_create_subm = document.getElementById("old_create_subm");
+old_create_subm.addEventListener("click", function(){
 	// お名前
     let name = document.getElementById("name").value;
     //　年齢

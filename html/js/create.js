@@ -6,7 +6,7 @@ subm.addEventListener("click", function(){
     //　年齢
     let age = document.getElementById("age").value;
     // 性別
-    let flex = document.getElementsByClassName("flex").value;
+    let flex = document.getElementById("flex").value;
     // 住所
     let address = document.getElementById("address").value;
 	// メールアドレス
@@ -35,7 +35,7 @@ subm.addEventListener("click", function(){
     //　年齢
     let age = document.getElementById("age").value;
     // 性別
-    let flex = document.getElementsByClassName("flex").value;
+    let flex = document.getElementById("flex").value;
     // 住所
     let address = document.getElementById("address").value;
 	// メールアドレス

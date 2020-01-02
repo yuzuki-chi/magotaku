@@ -16,7 +16,7 @@ subm.addEventListener("click", function(){
 	// プロフィール（？）
 	let message = document.getElementById("message").value;
 	
-	let str = {'name':name, 'age':age, 'flex':flex, 'address':address, 'address':address};
+	let str = {'name':name, 'age':age, 'flex':flex, 'address':address, 'message':message};
 	let json = JSON.stringify(str);
 	let req = new XMLHttpRequest();
 	req.open('POST', 'https://citron-tree.jp/private/magotaku_tmp/young_create.php', true);
@@ -45,7 +45,7 @@ subm.addEventListener("click", function(){
 	// プロフィール（？）
 	let message = document.getElementById("message").value;
 	
-	let str = {'name':name, 'age':age, 'flex':flex, 'address':address, 'address':address};
+	let str = {'name':name, 'age':age, 'flex':flex, 'address':address, 'message':message};
 	let json = JSON.stringify(str);
 	let req = new XMLHttpRequest();
 	req.open('POST', 'https://citron-tree.jp/private/magotaku_tmp/old_create.php', true);

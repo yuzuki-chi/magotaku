@@ -37,19 +37,37 @@
         <section class="contact relative">
             <h2 class="create-title tr-r">新規登録</h2>
             <h3 class="tr-c">お仕事を依頼したい</h3>
-            <!-- フォーム送信の設定をして欲しい -->
+            <!-- フォーム送信の設定をして欲しい かしこま！-->
             <!-- <form class="formrun" action="#" method="POST" target="_top"> -->
+            <div>
+                    <h3 class="create-form-title">ユーザID（4字以上16字以内）
+                        <span>*</span>
+                    </h3>
+                    <input class="create-form" id="user_id" placeholder="ユーザID" type="text">
+            </div>    
+            <div>
+                    <h3 class="create-form-title">パスワード
+                        <span>*</span>
+                    </h3>
+                    <input class="create-form" id="user_password" placeholder="パスワード" type="password">
+            </div>
             <div>
                 <h3 class="create-form-title">お名前
                     <span>*</span>
                 </h3>
-                <input class="create-form" id="name" placeholder="お名前" type="text">
+                <input class="create-form" id="user_name" placeholder="お名前" type="text">
+            </div>
+            <div>
+                <h3 class="create-form-title">メールアドレス
+                    <span>*</span>
+                </h3>
+                <input class="create-form" id="user_email" placeholder="メールアドレス" type="text">
             </div>
             <div>
                 <h3 class="create-form-title">年齢
                     <span>*</span>
                 </h3>
-                <input class="create-form" id="age" placeholder="年齢" type="text">
+                <input class="create-form" id="user_age" placeholder="年齢" type="text">
             </div>
             <div>
                 <h3 class="create-form-title">性別
@@ -57,26 +75,45 @@
                 </h3>
                 <div class="flex">
                     <label class="flex">
-                        <input type="radio" id="flex" name="flex" value="男性">
+                        <input type="radio" id="user_gender" name="user_gender" value="男性">
                         <div>男性</div>
                     </label>
                     <label class="flex">
-                        <input type="radio" id="flex" name="flex" value="女性">
+                        <input type="radio" id="user_gender" name="user_gender" value="女性">
                         <div>女性</div>
                     </label>
                 </div>
             </div>
             <div>
-                <h3 class="create-form-title">住所
+                <h3 class="create-form-title">お住いの国
                     <span>*</span>
                 </h3>
-                <input class="create-form" id="address" placeholder="電話番号" type="text">
+                <input class="create-form" id="address_country" placeholder="例：日本" type="text">
+            </div>
+            <div>
+                <h3 class="create-form-title">郵便番号
+                    <!-- （JSで自動入力できるようになりたい） -->
+                    <span>*</span>
+                </h3>
+                <input class="create-form" id="user_postcode" placeholder="郵便番号" type="text">
+            </div>
+            <div>
+                <h3 class="create-form-title">都道府県
+                    <span>*</span>
+                </h3>
+                <input class="create-form" id="address_state" placeholder="例：東京都" type="text">
+            </div>
+            <div>
+                <h3 class="create-form-title">市区町村以下
+                    <span>*</span>
+                </h3>
+                <input class="create-form" id="address_city" placeholder="市区町村以下" type="text">
             </div>
             <div>
                 <h3 class="create-form-title">プロフィール
                     <span>*</span>
                 </h3>
-                <textarea class="create-textarea" id="message" cols="30" name="お問い合わせ内容"
+                <textarea class="create-textarea" id="user_profile" cols="30" name="お問い合わせ内容"
                     placeholder="お問い合わせ内容"></textarea>
             </div>
             <div class="formrun">

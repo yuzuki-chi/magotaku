@@ -1,7 +1,4 @@
 <?php
-//FROM create.js magotaku
-//formの項目数を増やした時は「＊」の箇所に追記してください.
-
 header("Access-Control-Allow-Origin: https://yuzuki-chi.github.io");
 
 mb_language('japanese');
@@ -80,7 +77,7 @@ if ($json = file_get_contents('php://input')) $data = json_decode($json, true);
                         'user_profile'=>$data['user_profile'] // プロフィール
                     ];
         $jsonstr = json_encode($accounts,  JSON_UNESCAPED_UNICODE);
-        file_put_contents("young_accounts.json" , $jsonstr);
+        file_put_contents("old_accounts.json" , $jsonstr);
         
         echo "アカウントの追加を行いました。";
     } catch (Exception $e) {

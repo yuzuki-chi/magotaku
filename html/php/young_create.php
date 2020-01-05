@@ -1,7 +1,4 @@
 <?php
-//FROM create.js magotaku
-//formの項目数を増やした時は「＊」の箇所に追記してください.
-
 header("Access-Control-Allow-Origin: https://yuzuki-chi.github.io");
 
 mb_language('japanese');

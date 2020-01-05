@@ -1,6 +1,6 @@
 //YOUNG SUBMIT BUTTON
 var young_create_subm = document.getElementById("young_create_subm");
-old_create_subm.addEventListener("click", function(){
+young_create_subm.addEventListener("click", function(){
     let user_id = document.getElementById("user_id").value;
     let user_password = document.getElementById("user_password").value;
     let user_email = document.getElementById("user_email").value;

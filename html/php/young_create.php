@@ -53,6 +53,11 @@ else if($data['user_postcode']==null) exit('郵便番号が未入力です');
 else if($data['user_profile']==null) exit('プロフィールが未入力です');
 /*---「＊」---*/
 
+//IDの重複を調べる
+foreach ($accounts as $value) {
+	if($value['user_id']==$data['user_id']) exit('ログインIDが重複しています');
+}
+//--
 
 try {
 	$TABLE_ID = count($accounts) + 1;

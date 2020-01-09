@@ -39,41 +39,46 @@ if ($fp) {
 */
 
 if ($json = file_get_contents('php://input')) $data = json_decode($json, true);
-    //[入力必須欄]の確認
-    if ($data['user_id']==null) exit('ユーザIDが未入力です');
-    else if($data['user_password']==null) exit('パスワードが未入力です');
-    else if($data['user_email']==null) exit('メールアドレスが未入力です');
-    else if($data['user_name']==null) exit('ユーザ名が未入力です');
-    else if($data['user_age']==null) exit('年齢が未入力です');
-    else if($data['user_gender']==null) exit('性別が未選択です');
-    else if($data['address_country']==null) exit('住所が不適切です');
-    else if($data['address_state']==null) exit('住所が不適切です');
-    else if($data['address_city']==null) exit('住所が不適切です');
-    else if($data['user_postcode']==null) exit('郵便番号が未入力です');
-    else if($data['user_profile']==null) exit('プロフィールが未入力です');
+//[入力必須欄]の確認
+if ($data['user_id']==null) exit('ユーザIDが未入力です');
+else if($data['user_password']==null) exit('パスワードが未入力です');
+else if($data['user_email']==null) exit('メールアドレスが未入力です');
+else if($data['user_name']==null) exit('ユーザ名が未入力です');
+else if($data['user_age']==null) exit('年齢が未入力です');
+else if($data['user_gender']==null) exit('性別が未選択です');
+else if($data['address_country']==null) exit('住所が不適切です');
+else if($data['address_state']==null) exit('住所が不適切です');
+else if($data['address_city']==null) exit('住所が不適切です');
+else if($data['user_postcode']==null) exit('郵便番号が未入力です');
+else if($data['user_profile']==null) exit('プロフィールが未入力です');
+/*---「＊」---*/
+
+//IDの重複を調べる
+foreach ($accounts as $value) {
+    if($value['user_id']==$data['user_id']) exit('ログインIDが重複しています');
+}
+//--
+
+try {
+    $TABLE_ID = count($accounts) + 1;
     /*---「＊」---*/
+    $accounts[] = ['TABLE_ID'=>$TABLE_ID, // テーブルID
+                    'user_id'=>$data['user_id'], // ユーザID
+                    'user_password'=>$data['user_password'], // パスワード
+                    'user_email'=>$data['user_email'], // メールアドレス
+                    'user_name'=>$data['user_name'], // ユーザ名
+                    'user_age'=>$data['user_age'], // 年齢
+                    'user_gender'=>$data['user_gender'], // 性別
+                    'address_country'=>$data['address_country'], // 在住国
+                    'address_state'=>$data['address_state'], // 都道府県
+                    'address_city'=>$data['address_city'], // 住所以下
+                    'user_postcode'=>$data['user_postcode'], // 郵便番号
+                    'user_profile'=>$data['user_profile'] // プロフィール
+                ];
+    $jsonstr = json_encode($accounts,  JSON_UNESCAPED_UNICODE);
+    file_put_contents("old_accounts.json" , $jsonstr);
     
-    
-    try {
-        $TABLE_ID = count($accounts) + 1;
-        /*---「＊」---*/
-        $accounts[] = ['TABLE_ID'=>$TABLE_ID, // テーブルID
-                        'user_id'=>$data['user_id'], // ユーザID
-                        'user_password'=>$data['user_password'], // パスワード
-                        'user_email'=>$data['user_email'], // メールアドレス
-                        'user_name'=>$data['user_name'], // ユーザ名
-                        'user_age'=>$data['user_age'], // 年齢
-                        'user_gender'=>$data['user_gender'], // 性別
-                        'address_country'=>$data['address_country'], // 在住国
-                        'address_state'=>$data['address_state'], // 都道府県
-                        'address_city'=>$data['address_city'], // 住所以下
-                        'user_postcode'=>$data['user_postcode'], // 郵便番号
-                        'user_profile'=>$data['user_profile'] // プロフィール
-                    ];
-        $jsonstr = json_encode($accounts,  JSON_UNESCAPED_UNICODE);
-        file_put_contents("old_accounts.json" , $jsonstr);
-        
-        echo "アカウントの追加を行いました。";
-    } catch (Exception $e) {
-        echo "予期せぬエラーが発生しました";
-    }
+    echo "アカウントの追加を行いました。";
+} catch (Exception $e) {
+    echo "予期せぬエラーが発生しました";
+}

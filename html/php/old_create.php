@@ -41,12 +41,6 @@ if ($fp) {
 if ($json = file_get_contents('php://input')) $data = json_decode($json, true);
     //[入力必須欄]の確認
     if ($data['user_id']==null) exit('ユーザIDが未入力です');
-    // else if($data['age']==null) exit('年齢が未入力です');
-    // else if($data['flex']==null) exit('性別が未入力です');
-    // else if($data['address']==null) exit('住所が未入力です');
-    // else if($data['message']==null) exit('プロフィールが未入力です');
-    
-    // else if($data['user_id']==null) exit('ユーザIDが未入力です');
     else if($data['user_password']==null) exit('パスワードが未入力です');
     else if($data['user_email']==null) exit('メールアドレスが未入力です');
     else if($data['user_name']==null) exit('ユーザ名が未入力です');

@@ -388,6 +388,12 @@ a{
 .relative{
   position: relative;
 }
+.absolute{
+  position: absolute;
+}
+.grid{
+  display: grid;
+}
 .flex{
   display: flex;
 }
@@ -409,14 +415,41 @@ a{
 .b-white{
   background: white;
 }
+.b-black{
+  background-color: black;
+}
 .color-black{
   color: black;
 }
 .color-white{
   color: white;
 }
+.w-100{
+  width: 100%;
+}
 .m-widht_1600{
   max-width: 1600px;
+}
+.left-0{
+  left: 0;
+}
+.top-70{
+  top: 70px;
+}
+.bottom-0{
+  bottom: 0;
+}
+.pd-5{
+  padding: 5px;
+}
+.pt-70{
+  padding-top: 70px;
+}
+.mb-70{
+  margin-bottom: 70px;
+}
+.mb-80{
+  margin-bottom: 80px;
 }
 .m-auto{
   margin-right: auto;
@@ -425,8 +458,14 @@ a{
 .fs-20{
   font-size: 20px;
 }
+.fs-40{
+  font-size: 40px;
+}
 .v-top{
   vertical-align: top;
+}
+.z-500{
+  z-index: 500;
 }
 header footer section{
     display: block;
@@ -523,10 +562,30 @@ li > a{
 .menu__item > a{
     padding: 10px;
 }
+.menu__item > span{
+    padding: 10px;
+}
 .bg_img{
     margin: 0 auto;
     width: 100%;
     max-width: 1920px;
+}
+.rogin-menu{
+  max-width: 1000px;
+}
+.close-item{
+  margin-top: 30px;
+  margin-left: 85%;
+}
+.rogin-form{
+}
+.rogin-form > hr{
+  border: solid 0.2px black;
+}
+.rogin-item{
+}
+.rogin-item > a{
+  padding-bottom: 30px;
 }
 .top_text{
     font-family: "Nikukyu";

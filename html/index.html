@@ -7,12 +7,13 @@
 		<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/earlyaccess/nikukyu.css" rel="stylesheet">
 		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		<script src="anime.min.js"></script>
 	</head>
 	<body>
 		<header id="top">
 			<div class="header b-white">
 				<div class="top border-8">
-					<h1 class="font">AF Tamura</h1>
+					<h1 class="font">Magotaku</h1>
 				</div >
 				<div class="header__menu">
 					<div class="menu__item">
@@ -27,12 +28,38 @@
 					<div class="menu__item">
 						<a class="a_text color-black btn-flat" href="#create" title="creat">登録する</a>
 					</div>
-					<div class="menu__item">
-						<a class="a_text color-black btn-flat-g" href="#rogin" title="rogin">ログイン</a>
+					<div id="rogin_nav" class="menu__item">
+						<span class="a_text color-black btn-flat-g" href="./rogin/rogin.html" title="rogin">ログイン</span>
 					</div>
 				</div>
 			</div>
 		</header>
+		<div id="rogin_form" class="absolute w-100 bottom-0 b-white top-70 left-0 z-500 rogin-form">
+			<hr class="color-black mb-70">
+			<div id="close_item" class="fas fa-times fa-2x close-item"></div>
+			<div class="flex pt-70 rogin-menu m-auto">
+				<div class="pd-5 rogin-item m-auto">
+					<div class="mb-80">
+						<i class="fas fa-child color-black fa-3x"></i>
+					</div>
+					<a class="color-black fs-40" href="rogin/young-rogin.html">
+						<span>孫としてログイン</span>
+						<i class="fas fa-arrow-right fa-1x"></i>
+					</a>
+					<hr>
+				</div>
+				<div class="pd-5 rogin-item m-auto">
+					<div class="mb-80">
+						<i class="fas fa-blind fa-3x"></i>
+					</div>
+					<a class="color-black fs-40" href="rogin/old-rogin.html">
+						<span>老人としてログイン</span>
+						<i class="fas fa-arrow-right fa-1x"></i>
+					</a>
+					<hr>
+				</div>
+			</div>
+		</div>
 		<main class="contents">
 				<a href="" data-baseweb></a>
 			<section>
@@ -96,9 +123,8 @@
 						</div>
 					</div>
 				</div>
-				<p></p>
 			</section>
-			<section id="search" class="section_search">
+			<section id="#search"　class="section_search">
 				<div class="tr-c search_text m-auto">
 					<a href="search/search.html" class="color-black">探す</a>
 				</div>
@@ -150,7 +176,7 @@
 					</ul>
 				</div>
 				<div class="footer_icon">
-					<a class="footer_icon" href="#top">AF Tamura</a>
+					<a class="footer_icon" href="#top">Magotaku</a>
 				</div>
 				<div class="footer_container">
 					<div class="footer_text">
@@ -164,12 +190,14 @@
 					</div>
 				</div>
 				<p class="copyright">
-						Copyright ®︎ Anal Tamura Co.Ltd All Rights Reserved.
+						Copyright ®︎ Baby Systems Co.Ltd All Rights Reserved.
 				</p>
 			</section>
 			<aside class="sub_menu">
 			</aside>
 		</main>
 	<script type="text/javascript" src="index.js"></script>
+	<script type="text/javascript" src="js/vue-index.js"></script>
+	<script type="text/javascript" src="js/anime.js"></script>
 	</body>
 </html>

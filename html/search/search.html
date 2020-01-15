@@ -62,17 +62,8 @@
         </div>
     </div>
     <main>
-        <section class="b-white">
-            <div class="search_bar m-auto">
-                <div class="fs-20 color-black tr-c">掲示板を探す
-                </div>
-                <div class="search_menu b-white m-auto flex v-top">
-                    <i class="v-middle fas fa-search fa-lg"></i>
-                    <span>探す</span>
-                    <div class="search_input">
-                        <input type="text" placeholder="検索">
-                    </div>
-                    <i class="fas fa-search "></i>
+        <section class="search_contents b-white m-auto">
+            <div class="fs-20 color-black tr-c search_contents_text">掲示板を探す</div>
                     <!-- TODO -->
                     <!-- ログインフォームの作成 -->
                     <!-- 
@@ -101,14 +92,17 @@
                         | success           : 成功の是非                |
                         -----------------------------------------------
                     -->
-                </div>
-            </div>
-        </section>
-        <section class="m-width_1600">
-            <div>
-                <div class="search_contents">
-                    <div class="float-left main-search">
+            <div class="relative home-filters-search-bar m-auto">
+                <div class="flex float-left home-filters-form">
+                    <div class="home-filters relative">
+                        <span class="tr-c fas fa-search fa-2x"></span>
                     </div>
+                    <div class="home-filters-serach relative">
+                        <input type="text" name="search" placeholder="検索">
+                    </div>
+                </div>
+                <div class="home-filters-search-btn">
+                    <button>検索</button>
                 </div>
             </div>
         </section>

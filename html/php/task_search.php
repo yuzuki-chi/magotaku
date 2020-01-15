@@ -38,13 +38,14 @@ if ($fp) {
 	-------------------------------------------------------
 */
 
-if ($json = file_get_contents('php://input')) $data = json_decode($json, true);
+if ($input =  urldecode(file_get_contents('php://input'))) //今回はJSONではなく、検索ワードがベタ打ちされる想定.
+
 //[入力必須欄]の確認
-if ($data['search']==null) exit('タスクが未入力です');
+if ($input==null) exit('タスクが未入力です');
 
 try {
     foreach ($tasks as $value) {
-        if($value['title']==$data['search']) { //TITLE MATCH!
+        if('search='.$value['title']==$input) { //TITLE MATCH!
             exit(json_encode($value));
         }
     }

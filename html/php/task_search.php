@@ -41,7 +41,7 @@ if ($fp) {
 if ($input =  urldecode(file_get_contents('php://input'))) //今回はJSONではなく、検索ワードがベタ打ちされる想定.
 
 //[入力必須欄]の確認
-if ($input==null) exit('タスクが未入力です');
+if ($input=='search=') exit('タスクが未入力です'); //頭ワルワル実装。応急処置なのでいつか直して
 
 try {
     foreach ($tasks as $value) {

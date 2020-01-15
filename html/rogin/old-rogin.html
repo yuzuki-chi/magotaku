@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="../index.css">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <header id="top">
+        <div class="header create-top">
+            <div class="top padding-8">
+                <a href="../index.html">
+                    <h1 class="color-white font">Magotaku</h1>
+                </a>
+            </div>
+            <div class="header__menu">
+                <div class="menu__item">
+                    <a class="a_text color-white" href="#top" title="top">TOP</a>
+                </div>
+                <div class="menu__item">
+                    <a class="a_text color-white" href="#about" title="about">まごたくについて</a>
+                </div>
+                <div class="menu__item">
+                    <a class="a_text color-white" href="#contact" title="contact">連絡</a>
+                </div>
+                <div class="menu__item">
+                    <a class="a_text color-white btn-flat2" href="./index.html" title="creat">登録する</a>
+                </div>
+                <div class="menu__item">
+                    <a class="a_text color-white btn-flat-g" href="./index.html" title="rogin">ログイン</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="contents">
+
+        <!-- TODO -->
+        <!-- ログインフォームの作成 -->
+        <!-- 
+            成功するテストケース
+            https://citron-tree.jp/private/magotaku_tmp/old_login.php
+            へElentListenerからhttprequestを送信すると、登録されたユーザ情報がJSON形式で返ってくる.
+            正しいJSONが返ってきたらログイン成功 => ログイン後のページへリダイレクト.
+            誤ったJSONが返ってきたらログイン失敗 => エラー内容が文字列で返ってくる.
+
+            - 送信する必要があるJSON形式 ----------
+            | user_id         : ユーザID      　|
+            | user_password   : ユーザパスワード |
+            -----------------------------------
+
+            - 成功時に返ってくるJSONの値 ----------------------
+            | 	TABLE_ID        : テーブルID, primary key  |
+            |   user_id	        : ユーザID                 |
+            |   user_password	: ユーザパスワード          |
+            |   user_email		: メールアドレス            |
+            |   user_name		: ユーザ名                 |
+            |   user_age		: ユーザ年齢                |
+            |   user_gender		: ユーザ性別                |
+            |   address_country	: 在住国                   |
+            |   address_state	: 在住都道府県              |
+            |   address_city	: 以下住所                 |
+            |   user_postcode	: ユーザ郵便番号            |
+            |   user_profile	: プロフィール              |
+            -----------------------------------------------
+         -->
+        <section class="footer">
+            <div class="footer_link">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-instagram my-icon"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-twitter my-icon"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-facebook-square my-icon"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_icon">
+                <a class="footer_icon" href="#top">AF Tamura</a>
+            </div>
+            <div class="footer_container">
+                <div class="footer_text">
+                    <a href="#">アクセシビリティ</a>
+                </div>
+                <div class="footer_text">
+                    <a href="#">利用規約</a>
+                </div>
+                <div class="footer_text">
+                    <a href="#">プライバシー</a>
+                </div>
+            </div>
+            <p class="copyright">
+                Copyright ®︎ Anal Tamura Co.Ltd All Rights Reserved.
+            </p>
+        </section>
+        <aside class="sub_menu"></aside>
+        </main>
+        <script type="text/javascript" src="../js/create_old.js"></script>
+</body>
+</html>

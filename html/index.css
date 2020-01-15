@@ -397,6 +397,12 @@ a{
 .flex{
   display: flex;
 }
+.block{
+  display: block;
+}
+.inline-block{
+  display: inline-block;
+}
 .fixid{
   position: fixed;
 }
@@ -506,6 +512,12 @@ header{
     top: 8px;
     left: 10px;
 }
+.top-b{
+    display: flex;
+    position: absolute;
+    top: 8px;
+    left: 15%;
+}
 .btn-flat{
     padding: 0.3em 0.5em;
     border-radius: 3px;
@@ -561,6 +573,15 @@ li > a{
     margin-top: 15px;
     margin-right: 5%;
 }
+.header__menu_b{
+    display: block;
+    overflow: hidden;
+    position: relative;
+    justify-content: end;
+    float: left;
+    margin-top: 15px;
+    margin-right: 15%;
+}
 .menu__item{
     display: inline-block;
     vertical-align: justify;
@@ -582,11 +603,15 @@ li > a{
 .create-form{
     animation-duration: 2s;
 }
+.create-form1{
+  visibility: hidden;
+}
 .create-form > hr {
   border: solid 0.1px black;
 }
-.create-item {}
+.create-item {
 
+}
 .create-item > a {
   padding-bottom: 30px;
 }
@@ -1080,4 +1105,75 @@ textarea{
 .login-e-p{
   left: 0;
   bottom: 0;
+}
+
+
+/* olo-rogin.html */
+.old-rogin{
+  width: 100%;
+}
+.container-old-rogin{
+  width: 100%;
+  min-height: 100vh;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background: white;
+}
+.wrap-old-login{
+  width: 500px;
+  background: white;
+  overflow: hidden;
+}
+.old-login-form{
+  width: 100%;
+  padding-right: 55px;
+  padding-left: 55px;
+  padding-top: 178px;
+}
+.old-lf-sin {
+  font-size: 30px;
+  color: black;
+  line-height: 1.2;
+  left: 0em;
+  margin-bottom: 30px;
+}
+.or-input{
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 10px 30px 13px 20px;
+  border: solid 1px black;
+  width: 300px;
+
+}
+.or-email > input {
+  font-size: 20px;
+}
+.old-rogin-btn{
+  margin-top: 40px;
+}
+.old-rogin-btn > button{
+  background: #0c6c71;
+  text-decoration: none;
+  color: white;
+  padding: 15px 28px;
+  width: 75%;
+  font-weight: 600;
+  font-size: 17px;
+  border-radius: 0;
+  border: 2px solid #11939A;
+  line-height: 18px;
+}
+.old-rogin-btn > button:hover {
+  background: #0a4e52;
+}
+.create-user{
+  padding-top: 250px;
+}
+.create-user > a:hover{
+  color: #57b846;
+}
+.icon-arrow{
+  margin-right: 20px;
 }

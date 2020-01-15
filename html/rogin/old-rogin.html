@@ -10,15 +10,12 @@
 <body>
     <header id="top">
         <div class="header create-top">
-            <div class="top padding-8">
+            <div class="top-b padding-8">
                 <a href="../index.html">
                     <h1 class="color-white font">Magotaku</h1>
                 </a>
             </div>
-            <div class="header__menu">
-                <div class="menu__item">
-                    <a class="a_text color-white" href="#top" title="top">TOP</a>
-                </div>
+            <div class="header__menu_b">
                 <div class="menu__item">
                     <a class="a_text color-white" href="#about" title="about">まごたくについて</a>
                 </div>
@@ -29,13 +26,58 @@
                     <a class="a_text color-white btn-flat2" href="./index.html" title="creat">登録する</a>
                 </div>
                 <div class="menu__item">
-                    <a class="a_text color-white btn-flat-g" href="./index.html" title="rogin">ログイン</a>
+                    <span id="rogin_nav" class="a_text color-white btn-flat-g" title="rogin">ログイン</span>
                 </div>
             </div>
         </div>
     </header>
+    <div id="rogin_form" class="absolute fixid w-100 bottom-0 b-white top-70 left-0 z-500 rogin-form">
+        <div id="close_item" class="fas fa-times fa-2x close_item"></div>
+    	<div class="flex pt-70 rogin-menu m-auto">
+                <div class="pd-5 rogin-item m-auto">
+    	        <div class="mb-80">
+    	            <i class="fas fa-child color-black fa-3x"></i>
+                </div>
+    	        <a id="rogin_link1" class="color-black fs-40" href="rogin/young-rogin.html">
+    	            <span>孫としてログイン</span>
+    	            <i id="rogin_item_bar1" class="fas fa-arrow-right fa-1x"></i>
+                </a>
+    	        <hr>
+    	        <span>お仕事に必要なすべての情報をご覧いただけます。</span>
+    	    </div>
+    	</div>
+    </div>
     <main class="contents">
-
+        <section class="old-rogin">
+            <div class="container-old-rogin flex relative">
+                <div class="wrap-old-login">
+                    <form class="old-login-form relative">
+                        <div class="relative old-lf-sin">サインイン</div>
+                        <div class="relative old-login-form-l">
+                            <label>ユーザー名またはメールアドレス</label>
+                            <div class="or-input">
+                                <input type="text" placeholder="ユーザー名">
+                            </div>
+                        </div>
+                        <div>
+                            <label>パスワード</label>
+                            <div class="or-input">
+                                <input type="text" placeholder="パスワード">
+                            </div>
+                        </div>
+                        <div>
+                            <a class="foget-p" href="#">パスワードを忘れましたか？</a>
+                        </div>
+                        <div class="old-rogin-btn">
+                            <button class="flex">ログイン</button>
+                        </div>
+                    </form>
+                    <div class="create-user tr-c">
+                        <a href="#" class="color-black">アカウントを作成しますか？</a>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- TODO -->
         <!-- ログインフォームの作成 -->
         <!-- 
@@ -86,7 +128,7 @@
                 </ul>
             </div>
             <div class="footer_icon">
-                <a class="footer_icon" href="#top">AF Tamura</a>
+                <a class="footer_icon" href="#top">MAGOTAKU</a>
             </div>
             <div class="footer_container">
                 <div class="footer_text">
@@ -100,11 +142,11 @@
                 </div>
             </div>
             <p class="copyright">
-                Copyright ®︎ Anal Tamura Co.Ltd All Rights Reserved.
+                Copyright ®︎ Baby Systems Co.Ltd All Rights Reserved.
             </p>
         </section>
         <aside class="sub_menu"></aside>
         </main>
-        <script type="text/javascript" src="../js/create_old.js"></script>
+        <script type="text/javascript" src="../js/rogin_old.js"></script>
 </body>
 </html>

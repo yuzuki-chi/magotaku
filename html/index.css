@@ -510,7 +510,7 @@ header{
     display: flex;
     position: absolute;
     top: 8px;
-    left: 10px;
+    left: 20px;
 }
 .top-b{
     display: flex;
@@ -602,6 +602,7 @@ li > a{
 }
 .create-form{
     animation-duration: 2s;
+    background: white;
 }
 .create-form1{
   visibility: hidden;
@@ -1016,7 +1017,7 @@ textarea{
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 15px;
+  padding-top: 20px;
   background: linear-gradient(-135deg, #c850c0, #4158d0);
 }
 .wrap-login{
@@ -1118,7 +1119,6 @@ textarea{
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 30px;
   background: white;
 }
 .wrap-old-login{
@@ -1169,7 +1169,7 @@ textarea{
   background: #0a4e52;
 }
 .create-user{
-  padding-top: 250px;
+  padding-top: 100px;
 }
 .create-user > a:hover{
   color: #57b846;

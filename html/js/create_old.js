@@ -36,21 +36,11 @@ old_create_subm.addEventListener("click", function(){
 	}
 })
 //ログインメニューの表示
-document.getElementById("create_form").style.visibility = "hidden";
-// document.getElementById("create_nav").onclick = function () {
-// 	document.getElementById("create_form").style.visibility = "visible";
-// }
-// // ログインメニューを閉じる
-// documen
-// t.getElementsByClassName("close_item").onclick = function () {
-// 	document.getElementById("rogin_form").style.visibility = "hidden";
-// }
-// //ログインメニューの表示
-// document.getElementById("rogin_form").style.visibility = "hidden";
-// document.getElementById("rogin_nav").onclick = function () {
-// 	document.getElementById("rogin_form").style.visibility = "visible";
-// }
-// // ログインメニューを閉じる
-// document.getElementById("close_item").onclick = function () {
-// 	document.getElementById("rogin_form").style.visibility = "hidden";
-// }
+document.getElementById("rogin_form").style.visibility = "hidden";
+document.getElementById("rogin_nav").onclick = function () {
+document.getElementById("rogin_form").style.visibility = "visible";
+}
+// ログインメニューを閉じる
+document.getElementById("close_item").onclick = function () {
+document.getElementById("rogin_form").style.visibility = "hidden";
+}

@@ -46,6 +46,34 @@
                         <input type="text" placeholder="検索">
                     </div>
                     <i class="fas fa-search "></i>
+                    <!-- TODO -->
+                    <!-- ログインフォームの作成 -->
+                    <!-- 
+                        成功するテストケース
+                        https://citron-tree.jp/private/magotaku_tmp/task_search.php
+                        へformからPOSTを送信すると、登録されたユーザ情報がJSON形式で返ってくる.
+                        正しいJSONが返ってきたら掲示板検索成功 => 掲示板一覧へ
+                        誤ったJSONが返ってきたら掲示板検索失敗 => 文字列でエラーが返ってくる.
+
+                        - 送信する必要があるJSON形式 ----------
+                        | title         : 掲示板の名前     　|
+                        -----------------------------------
+
+                        - 成功時に返ってくるJSONの値 ----------------------
+                        | TABLE_ID		    : テーブルID, primary key   |
+                        | old_id            : 依頼者のID                |
+                        | young_id          : 受託者のID                |
+                        | place             : 住所                     |
+                        | time              : 日時                     |
+                        | genre             : ジャンル                  |
+                        | title             : タイトル                  |
+                        | detail            : 詳細事項                  |
+                        | salary            : 給料                     |
+                        | old_valuation     : 老人側の評価              |
+                        | young_valuation   : 孫側の評価                |
+                        | success           : 成功の是非                |
+                        -----------------------------------------------
+                    -->
                 </div>
             </div>
         </section>

@@ -53,6 +53,6 @@ if ($json = file_get_contents('php://input')) $data = json_decode($json, true);
             }
             exit('パスワードが誤っています');
         }
-        exit('IDもしくはパスワードが誤っています');
     }
+    exit('IDもしくはパスワードが誤っています');
     //---------------------

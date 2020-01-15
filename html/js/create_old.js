@@ -30,6 +30,9 @@ old_create_subm.addEventListener("click", function(){
 	let req = new XMLHttpRequest();
 	req.open('POST', 'https://citron-tree.jp/private/magotaku_tmp/old_create.php', true);
 	req.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+	// TODO
+	// たまに403エラーが発生する。たぶん入力内容に記号とかが入るとダメなのかも
+	// -> HTMLを平文に変換してからJSONに変えて送信する
 	req.send(json);
 	req.onload=function(){
 		alert(req.responseText);

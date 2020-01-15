@@ -383,7 +383,7 @@ a{
   padding: 8px;
 }
 .border-8{
-  border: double 8px;
+  border: double 10px;
 }
 .relative{
   position: relative;
@@ -408,6 +408,9 @@ a{
 }
 .font{
     font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "sans-serif";
+}
+.f-28{
+  font-size: 28px;
 }
 .float-left{
   float: left;
@@ -441,6 +444,9 @@ a{
 }
 .pd-5{
   padding: 5px;
+}
+.pt-30{
+  padding-top: 30px;
 }
 .pt-70{
   padding-top: 70px;
@@ -570,22 +576,40 @@ li > a{
     width: 100%;
     max-width: 1920px;
 }
+.create-menu{
+  max-width: 1000px;
+}
+.create-form{
+    animation-duration: 2s;
+}
+.create-form > hr {
+  border: solid 0.1px black;
+}
+.create-item {}
+
+.create-item > a {
+  padding-bottom: 30px;
+}
 .rogin-menu{
   max-width: 1000px;
 }
-.close-item{
-  margin-top: 30px;
+.close_item{
+  margin-top: 40px;
   margin-left: 85%;
 }
 .rogin-form{
+  animation-duration: 2s;
 }
 .rogin-form > hr{
-  border: solid 0.2px black;
+  border: solid 0.1px black;
 }
 .rogin-item{
 }
 .rogin-item > a{
   padding-bottom: 30px;
+}
+#rogin_link{
+  padding-left: 3px;
 }
 .top_text{
     font-family: "Nikukyu";
@@ -720,8 +744,9 @@ input, input, textarea{
     display: flex;
 }
 .section_search{
-    padding-top: 100px;
-    padding-bottom: 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background: white;
 }
 .search_text{
     border-radius: 25px;
@@ -835,7 +860,7 @@ textarea{
 }
 .footer_icon > a{
     color: white;
-    font-size: 30px;
+    font-size: 25px;
 }
 .copyright{
     font-size: 11px;
@@ -956,4 +981,103 @@ textarea{
   background: #f2f2f2;
   font-size: 15px;
   padding: 5px;
+}
+
+/* young-rogin.html */
+.container-rogin{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background: linear-gradient(-135deg, #c850c0, #4158d0);
+}
+.wrap-login{
+  width: 700px;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 177px 130px 33px 95px;
+}
+.login-pic{
+  width: 316px;
+}
+.login-form{
+  width: 250px;
+  margin-right: 100px;
+}
+.login-form > span{
+  font-size: 24px;
+  color: black;
+  text-align: center;
+  width: 100%;
+  display: block;
+  padding-bottom: 54px;
+}
+.input-e{
+  font-size: 15px;
+  line-height: 1.5;
+  color: #666666;
+  display: block;
+  width: 80%;
+  background: #e6e6e6;
+  height: 50px;
+  border-radius: 25px;
+  padding: 0 30px 0 68px;
+}
+.input-p {
+  font-size: 15px;
+  line-height: 1.5;
+  color: #666666;
+  display: block;
+  width: 80%;
+  background: #e6e6e6;
+  height: 50px;
+  border-radius: 25px;
+  padding: 0 30px 0 68px;
+  margin-top: 15px;
+}
+.login-btn-form{
+  justify-content: center;
+}
+.login-btn{
+  border: none;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #fff;
+  text-transform: uppercase;
+  width: 100%;
+  height: 50px;
+  border-radius: 25px;
+  background: #57b846;
+  justify-content: center;
+  align-items: center;
+  padding: 0 25px;
+  transition: all 0.4s;
+  margin-top: 20px;
+}
+.foget-p{
+  color: #666666;
+  font-size: 13px;
+  line-height: 1.5;
+}
+.foget-p:hover{
+  color: #57b846;
+}
+.p-top-136{
+  padding-top: 136px;
+}
+.txt2{
+  color: #666666;;
+}
+.txt2:hover{
+  color:#57b846;
+}
+.login-e-p{
+  left: 0;
+  bottom: 0;
 }

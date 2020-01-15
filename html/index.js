@@ -19,10 +19,25 @@ subm.addEventListener("click", function(){
 		alert(req.responseText);
 	}
 })
+//ログインメニューの表示
 document.getElementById("rogin_form").style.visibility = "hidden";
 document.getElementById("rogin_nav").onclick = function () {
 	document.getElementById("rogin_form").style.visibility = "visible";
 }
+// ログインメニューを閉じる
 document.getElementById("close_item").onclick = function(){
-	document.getElementById("rogin_form").style.visibility = "hidden"
+	document.getElementById("rogin_form").style.visibility = "hidden";
+}
+// 矢印のアニメーション
+document.getElementById("rogin_link1").onmouseover = function (){
+	document.getElementById("rogin_item_bar1").style.transform = "translateX(12px)";
+}
+document.getElementById("rogin_link1").onmouseout = function (){
+	document.getElementById("rogin_item_bar1").style.transform = "translateX(0px)";
+}
+document.getElementById("rogin_link2").onmouseover = function () {
+	document.getElementById("rogin_item_bar2").style.transform = "translateX(12px)";
+}
+document.getElementById("rogin_link2").onmouseout = function () {
+	document.getElementById("rogin_item_bar2").style.transform = "translateX(0px)";
 }

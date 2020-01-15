@@ -1044,6 +1044,13 @@ textarea{
   border-right: 1px solid #eaeaea;
   box-sizing: border-box;
   display: inline-block;
+  transition: 0.4s;
+}
+.home-filters:hover{
+  background-color: #2EE59D;
+  color: white;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  transform: translateY(-7px);
 }
 .home-filters span{
   transform: translateX(75%) translateY(70%)
@@ -1067,6 +1074,11 @@ textarea{
   box-sizing: border-box;
   color: #242a3a;
   outline: none;
+  transition: 0.4s;
+}
+.home-filters-serach > input:hover{
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  background: white;
 }
 .home-filters-search-btn{
   width: 130px;
@@ -1081,8 +1093,12 @@ textarea{
   height: 100%;
   outline: none;
   border: none;
+  transition: 0.4s;
 }
-
+.home-filters-search-btn button:hover{
+  background-color: white;
+  color: black;
+}
 
 /* young-rogin.html */
 .container-rogin{

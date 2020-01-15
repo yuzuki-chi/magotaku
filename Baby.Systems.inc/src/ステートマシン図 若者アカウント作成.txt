@@ -1,0 +1,18 @@
+# ステートマシン図
+
+```plantuml
+title 若者アカウント作成の部分
+
+skinparam monochrome true
+skinparam shadowing false
+
+hide empty description
+
+state アカウント未作成
+state アカウント未認証状態
+
+[*] --> アカウント未作成
+アカウント未作成 --> アカウント未認証状態 : アカウント作成
+アカウント未認証状態 --> アカウント認証状態 : web面接
+
+```

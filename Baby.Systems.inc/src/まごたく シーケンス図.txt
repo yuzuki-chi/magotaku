@@ -1,0 +1,48 @@
+# 個人課題シーケンス図
+```plantuml
+skinparam monochrome ture
+skinparam shadowing false
+
+hide footbox
+autonumber
+
+actor 管理者
+participant webbrowser
+boundary プロジェクト一覧画面
+control プロジェクト終了処理
+entity プロジェクト情報
+entity タスク情報
+
+プロジェクト一覧画面 -> webbrowser
+管理者 -> webbrowser : プロジェクト終了ボタンを押す
+webbrowser -> プロジェクト終了処理
+
+activate webbrowser
+alt 管理者権限なし
+create boundary アクセス権限エラー画面
+プロジェクト終了処理 -> アクセス権限エラー画面:エラー画面作成
+webbrowser <-- プロジェクト終了処理 : アクセス権限エラー処理
+管理者 -> webbrowser
+
+else 管理者権限あり
+プロジェクト終了処理 -> タスク情報 : 未完了タスクの取得
+プロジェクト終了処理 <-- タスク情報
+
+alt 未完了タスクあり
+create boundary 未完了タスク一覧画面
+プロジェクト終了処理 -> 未完了タスク一覧画面 : 未完了タスク一覧画面作成
+webbrowser <-- プロジェクト終了処理 : 未完了タスク取得
+管理者 --> webbrowser
+
+else 未完了タスクなし
+プロジェクト終了処理 -> プロジェクト情報 : 終了フラグを立てる
+create boundary プロジェクト終了画面
+プロジェクト終了処理 -> プロジェクト終了画面 : create
+webbrowser <-- プロジェクト終了処理 : プロジェクト終了画面
+管理者 --> webbrowser
+end
+deactivate webbrowser
+end
+
+ 
+```

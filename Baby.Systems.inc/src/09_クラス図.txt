@@ -1,0 +1,45 @@
+# クラス図
+```plantuml
+class 老人情報 {
+-TABLE_ID : int
+-user_id : varchar
+-user_password : varchar
+-user_email : varchar
+-user_name : varchar
+-user_age : int
+-user_gender : varchar
+-address_country : varchar
+-address_state : varchar
+-address_city : varchar
+-user_postcode : varchar
+-user_profile : varchar
+}
+
+class 若者情報 {
+-TABLE_ID : int
+-user_id : varchar
+-user_password : varchar
+-user_email : varchar
+-user_name : varchar
+-user_age : int
+-user_gender : varchar
+-address_country : varchar
+-address_state : varchar
+-address_city : varchar
+-user_postcode : varchar
+-user_profile : varchar
+}
+
+class 仕事情報 {
+-job_number : int
+-request_number : int
+-orders_number : int
+-place : varchar
+-time : int
+-job_genre : varchar
+-job_detail : varchar
+-reward　: int
+-evaluation : varchar
+-result : varchar
+}
+```

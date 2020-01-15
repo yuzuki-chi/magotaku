@@ -63,6 +63,7 @@
         </div>
     </div>
     <main class="contents">
+<<<<<<< HEAD
         <section class="rogin">
             <div class="container-rogin">
                 <div class="wrap-login flex">
@@ -91,6 +92,38 @@
                 </div>
             </div>
         </section>
+=======
+
+        <!-- TODO -->
+        <!-- ログインフォームの作成 -->
+        <!-- 
+            成功するテストケース
+            https://citron-tree.jp/private/magotaku_tmp/young_login.php
+            へElentListenerからhttprequestを送信すると、登録されたユーザ情報がJSON形式で返ってくる.
+            正しいJSONが返ってきたらログイン成功 => ログイン後のページへリダイレクト.
+            誤ったJSONが返ってきたらログイン失敗 => エラー内容が文字列で返ってくる.
+
+            - 送信する必要があるJSON形式 ----------
+            | user_id         : ユーザID      　|
+            | user_password   : ユーザパスワード |
+            -----------------------------------
+
+            - 成功時に返ってくるJSONの値 ----------------------
+            | 	TABLE_ID        : テーブルID, primary key  |
+            |   user_id	        : ユーザID                 |
+            |   user_password	: ユーザパスワード          |
+            |   user_email		: メールアドレス            |
+            |   user_name		: ユーザ名                 |
+            |   user_age		: ユーザ年齢                |
+            |   user_gender		: ユーザ性別                |
+            |   address_country	: 在住国                   |
+            |   address_state	: 在住都道府県              |
+            |   address_city	: 以下住所                 |
+            |   user_postcode	: ユーザ郵便番号            |
+            |   user_profile	: プロフィール              |
+            -----------------------------------------------
+         -->
+>>>>>>> 5a5c30efd33b6991e607376311710facb262a591
         <section class="footer">
             <div class="footer_link">
                 <ul>

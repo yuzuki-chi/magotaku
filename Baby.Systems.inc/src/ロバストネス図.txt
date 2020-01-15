@@ -1,0 +1,40 @@
+```plantuml
+left to right direction
+
+actor 老人
+
+boundary "老人ログイン画面" as rouzin_login
+boundary "メイン画面" as rouzin_main
+control "投稿処理" as rouzin_syori
+entity "依頼したもの一覧" as rouzin_list
+entity "依頼フォーム" as rouzin_form
+entity "メッセージ" as rouzin_message
+
+老人 --> rouzin_login : サイトを開く
+rouzin_login --> rouzin_main: ログイン成功
+rouzin_login <-- rouzin_main : ログアウト
+rouzin_main <--> rouzin_list : 依頼一覧を選択
+rouzin_main <--> rouzin_form : 依頼投稿を選択
+rouzin_main <--> rouzin_message : メッセージを選択
+rouzin_form --> rouzin_syori : 投稿
+rouzin_syori --> rouzin_list : 投稿結果を表示
+
+actor 若者
+
+boundary "若者ログイン画面" as wakamono_login
+boundary "若者メイン画面" as wakamono_main
+entity "老人の投稿一覧" as wakamono_list 
+entity "依頼受注画面" as wakamono_quest
+entity "若者メッセージ" as wakamono_message
+entity "若者受注一覧" as wakamono_order
+
+若者 --> wakamono_login : サイトを開く
+wakamono_login --> wakamono_main : ログイン成功
+wakamono_main <--> wakamono_list : 依頼一覧選択
+wakamono_main <--> wakamono_message : メッセージ選択
+wakamono_main <--> wakamono_order : 受注一覧選択
+wakamono_list --> wakamono_quest : 依頼の選択
+wakamono_list <-- wakamono_quest : 依頼中止
+wakamono_quest --> wakamono_order : 依頼を受ける
+
+```

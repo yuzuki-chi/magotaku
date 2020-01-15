@@ -41,12 +41,13 @@ if ($fp) {
 	------------------------------------------------------
     フィールド名		型定義			説明
 	------------------------------------------------------
-	TABLE_ID		int(11)			テーブルID, primary key
+    TABLE_ID		int(11)			テーブルID, primary key
 	old_id          varchar(16)     依頼者のID
     young_id        varchar(16)     受託者のID
     place           varchar(255)    住所
     time            datetime        日時
     genre           varchar(32)     ジャンル
+    title           varchar(32)     タイトル
     detail          varchar(255)    詳細事項
     salary          int(9)          給料
     old_valuation   int(1)          老人側の評価
@@ -62,11 +63,9 @@ else if($data['young_id']==null) exit('受託者のIDが指定されていませ
 else if($data['place']==null) exit('住所が指定されていません');
 else if($data['time']==null) exit('日時が指定されていません');
 else if($data['genre']==null) exit('ジャンルが指定されていません');
+else if($data['title']==null) exit('タイトルが指定されていません');
 else if($data['detail']==null) exit('詳細事項が記入されていません');
 else if($data['salary']==null) exit('給与が指定されていません');
-// else if($data['old_valuation']==null) exit('');
-// else if($data['young_valuation']==null) exit('');
-// else if($data['success']==null) exit('');
 
 try {
     $TABLE_ID = count($tasks) + 1;
@@ -78,6 +77,7 @@ try {
         'place' => $data['place'],
         'time' => $data['time'],
         'genre' => $data['genre'],
+        'title' => $data['title'],
         'detail' => $data['detail'],
         'salary' => $data['salary'],
         'success' => '0' //0:未受託, 1:成功, 2:失敗

@@ -1,0 +1,40 @@
+# ユースケース図
+
+```plantuml
+@startuml 
+
+left to right direction
+skinparam monocharome true
+skinparam shadowing false
+
+actor 老人
+actor 若者
+usecase 住所やプロフィールなどの情報を登録する #FCC
+利用者両人 --> (住所やプロフィールなどの情報を登録する)
+
+rectangle 老人の生活を助けるサービス{
+ usecase 若者に行ってほしい仕事の依頼内容を作成する #FCC
+ usecase 公開する #FCC
+ usecase 公開されている依頼を選択する #CFC
+ usecase メッセージを老人に送る #CCF
+ usecase 日時の設定など最終決定を行う #CFC
+ usecase お互いの評価を行う #CCF
+ 老人 --> (若者に行ってほしい仕事の依頼内容を作成する)
+ 老人 --> (公開する)
+ 若者 --> (公開されている依頼を選択する)
+ 若者 --> (メッセージを老人に送る)
+ 若者 --> (日時の設定など最終決定を行う)
+}
+ 若者 --> (実際に依頼をこなす)
+
+rectangle 老人の生活を助けるサービス{
+ 利用者両人 --> (お互いの評価を行う)
+}
+
+usecase 高谷 #FCC
+usecase 志水 #CFC
+usecase 立石 #CCF
+usecase 田村 #FFC
+
+@enduml
+```

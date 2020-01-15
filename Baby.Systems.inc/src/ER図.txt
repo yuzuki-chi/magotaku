@@ -1,0 +1,43 @@
+```plantuml
+
+title ER図
+
+skinparam shadowing false
+skinparam monochrome true
+
+hide circle
+
+class 老人{
+アカウント番号
+==
+年齢
+住所
+名前
+カード情報
+}
+
+class アプリ{
+買い物情報
+利用情報
+==
+評価
+}
+
+老人 *-- アプリ
+
+class 若者{
+アカウント番号
+==
+年齢
+住所
+名前
+プロフィール
+}
+
+若者 *-- アプリ
+
+若者 *-* 老人
+
+
+
+```

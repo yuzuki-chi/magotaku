@@ -38,7 +38,7 @@ if ($fp) {
 	-------------------------------------------------------
 */
 
-if ($json = file_get_contents('php://input')) $data = json_decode($json, true);
+if ($input = file_get_contents('php://input')) $data = json_decode($json, true);
 
 //[入力必須欄]の確認
 if ($input['search']==null) exit('タスクが未入力です');

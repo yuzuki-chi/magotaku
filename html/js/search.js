@@ -22,22 +22,11 @@ searchTask.addEventListener("click", function(){
 	req.send(json);
 	req.onload=function(){
 		var arg = req.responseText;
-		var isJSON = function(arg) {
-			arg = (typeof arg === "function") ? arg() : arg;
-			if (typeof arg  !== "string") {
-				return false;
-			}
-			try {
-			arg = (!JSON) ? eval("(" + arg + ")") : JSON.parse(arg);
-				return true;
-			} catch (e) {
-				return false;
-			}
-		};
-		alert(isJSON);
-		if (isJSON == true) {
+		try {
 			var returnText = JSON.parse(arg);
 			location.href = "../search/searchResults.html";
+		} catch (e) {
+			alert(arg);
 		}
 	}
 })

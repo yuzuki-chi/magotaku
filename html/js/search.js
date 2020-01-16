@@ -36,7 +36,8 @@ searchTask.addEventListener("click", function(){
 		};
 		if (isJSON == false) {
 			alert(arg);
-		} else {
+		}
+		if (isJSON == true) {
 			var returnText = JSON.parse(arg);
 			location.href = "../search/searchResults.html";
 		}

@@ -21,9 +21,24 @@ searchTask.addEventListener("click", function(){
 	req.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
 	req.send(json);
 	req.onload=function(){
-		var jsonText = req.responseText;
-		var returnText = JSON.parse(jsonText);
-		alert(returnText);
-		console.log(returnText);
+		var arg = req.responseText;
+		var isJSON = function(arg) {
+			arg = (typeof arg === "function") ? arg() : arg;
+			if (typeof arg  !== "string") {
+				return false;
+			}
+			try {
+			arg = (!JSON) ? eval("(" + arg + ")") : JSON.parse(arg);
+				return true;
+			} catch (e) {
+				return false;
+			}
+		};
+		if (isJSON == false) {
+			alert(arg);
+		} else {
+			var returnText = JSON.parse(arg);
+			location.href = "../search/searchResults.html";
+		}
 	}
 })

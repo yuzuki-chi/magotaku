@@ -25,3 +25,10 @@ function rogin_nav() {
 	const p1 = document.getElementById("rogin_form");
 	p1.style.display = "block";
 }
+
+// cursor change --
+$cursor = 'url(http://alphasis.info/wp-content/uploads/2013/10/cursor32x32-himawari.ico), auto';
+var $element = document.getElementById( "cursor" );
+$element.style.cursor = $cursor;
+var $cursor = $element.style.cursor;
+// -----------------

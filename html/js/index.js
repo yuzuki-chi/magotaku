@@ -27,7 +27,7 @@ function rogin_nav() {
 }
 
 // cursor change --
-$cursor = 'url(http://alphasis.info/wp-content/uploads/2013/10/cursor32x32-himawari.ico), auto';
+$cursor = 'url(https://yuzuki-chi.github.io/magotaku/html/img/cursor.ico), auto';
 var $element = document.getElementById( "cursor" );
 $element.style.cursor = $cursor;
 var $cursor = $element.style.cursor;

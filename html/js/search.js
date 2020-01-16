@@ -24,6 +24,6 @@ searchTask.addEventListener("click", function(){
 	// -> HTMLを平文に変換してからJSONに変えて送信する	
 	req.send(json);
 	req.onload=function(){
-		alert("v1:"+req.responseText);
+		alert("v1:");
 	}
 })

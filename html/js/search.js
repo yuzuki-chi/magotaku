@@ -11,7 +11,7 @@ document.getElementById("close_item").onclick = function () {
 // SEARCH TASK
 var searchTask = document.getElementById("search_task");
 searchTask.addEventListener("click", function(){
-    let text = document.getElementById("search_task").value;
+    let text = document.getElementById("search").value;
 	let str = {
 		'search_task':text, 
 	};

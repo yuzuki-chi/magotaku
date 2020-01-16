@@ -478,6 +478,9 @@ a{
 .z-500{
   z-index: 500;
 }
+.sp-b{
+  justify-content: space-between;
+}
 header footer section{
     display: block;
 }
@@ -1267,4 +1270,65 @@ textarea{
 }
 .icon-arrow{
   margin-right: 20px;
+}
+
+/* searchResults.html */
+.Results{
+  max-width: 1200px;
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 20px 0px;
+  border-radius: 25px;
+}
+.Results-title{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 70px;
+}
+.Results-img{
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-bottom: 30px;
+}
+.Results-img > img{
+  border-radius: 25px;
+}
+.Results-text{
+  padding-top: 50px;
+  padding-right: 30px;
+  width: 40%;
+}
+.Results-day{
+  font-size: 15px;
+  font-weight: 500;
+
+}
+.Results-span{
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 70px;
+}
+.Results-salary{
+  padding-top: 50px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.Results-text > iframe{
+  padding-top: 30px;
+}
+.Results-btn{
+  margin-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  font-size: 28px;
+  border: none;
+  color: white;
+  background: black;
+}
+.Results-btn:hover{
+  color: black;
+  background: white;
+  border: solid 0.1 black;
 }

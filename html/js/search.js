@@ -21,7 +21,9 @@ searchTask.addEventListener("click", function(){
 	req.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
 	req.send(json);
 	req.onload=function(){
-		var returnText = JSON.parse(req.responseText);
-		alert(JSON.stringify(req.responseText));
+		var jsonText = req.responseText;
+		var returnText = JSON.parse(jsonText);
+		alert(returnText);
+		console.log(returnText);
 	}
 })

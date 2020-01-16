@@ -24,7 +24,19 @@ searchTask.addEventListener("click", function(){
 		var arg = req.responseText;
 		try {
 			var returnText = JSON.parse(arg);
-			location.href = "../search/searchResults.html";
+			var locationURL = "../search/searchResults.html?";
+			locationURL = locationURL + "old_id=" + returnText['old_id'] + "&";
+			locationURL = locationURL + "young_id=" + returnText['young_id'] + "&";
+			locationURL = locationURL + "place=" + returnText['place'] + "&";
+			locationURL = locationURL + "time=" + returnText['time'] + "&";
+			locationURL = locationURL + "genre=" + returnText['genre'] + "&";
+			locationURL = locationURL + "title=" + returnText['title'] + "&";
+			locationURL = locationURL + "detail=" + returnText['detail'] + "&";
+			locationURL = locationURL + "salary=" + returnText['salary'] + "&";
+			locationURL = locationURL + "old_valuation=" + returnText['old_valuation'] + "&";
+			locationURL = locationURL + "young_valuation=" + returnText['young_valuation'] + "&";
+			locationURL = locationURL + "success=" + returnText['success'];
+			location.href = locationURL;
 		} catch (e) {
 			alert(arg);
 		}

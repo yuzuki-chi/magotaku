@@ -22,6 +22,6 @@ searchTask.addEventListener("click", function(){
 	req.send(json);
 	req.onload=function(){
 		var returnText = JSON.parse(req.responseText);
-		alert(returnText);
+		alert(JSON.stringify(req.responseText));
 	}
 })

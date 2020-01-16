@@ -13,7 +13,7 @@ var search_task = document.getElementById("search_task");
 search_task.addEventListener("click", function(){
     let search_task = document.getElementById("search_task").value;
 	let str = {
-		'search':search_task, 
+		'search_task':search_task, 
 	};
 	let json = JSON.stringify(str);
 	let req = new XMLHttpRequest();

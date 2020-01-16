@@ -41,10 +41,10 @@ if ($fp) {
 if ($input = file_get_contents('php://input')) $data = json_decode($json, true);
 
 //[入力必須欄]の確認
-if ($input['search']==null) exit('タスクが未入力です');
+if ($input['search_task']==null) exit('タスクが未入力です');
 try {
     foreach ($tasks as $value) {
-        if($value['title']==$input['search']) { //TITLE MATCH!
+        if($value['title']==$input['search_task']) { //TITLE MATCH!
             exit(json_encode($value));
         }
     }

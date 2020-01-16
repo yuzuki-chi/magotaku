@@ -9,11 +9,11 @@ document.getElementById("close_item").onclick = function () {
 }
 
 // SEARCH TASK
-var search_task = document.getElementById("search_task");
-search_task.addEventListener("click", function(){
-    let search_task = document.getElementById("search_task").value;
+var searchTask = document.getElementById("search_task");
+searchTask.addEventListener("click", function(){
+    let text = document.getElementById("search_task").value;
 	let str = {
-		'search_task':search_task, 
+		'search_task':text, 
 	};
 	let json = JSON.stringify(str);
 	let req = new XMLHttpRequest();

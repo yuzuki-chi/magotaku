@@ -1,2 +1,11 @@
-# mac
+# junk files on mac
 .DS_Store
+.Spotlight-V100
+.TemporaryItems
+.fseventsd
+
+# junk files on windows
+Thumbs.db
+RECYCLED
+RECYCLER
+$RECYCLE.BIN

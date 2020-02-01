@@ -1,7 +1,9 @@
 //YOUNG SUBMIT BUTTON
 var young_create_subm = document.getElementById("young_create_subm");
 young_create_subm.addEventListener("click", function(){
-    let user_id = document.getElementById("user_id").value;
+	// GitHub Pagesでのモックアップのため、動的ファイルへの対応を打ち切りました.
+	/*
+	let user_id = document.getElementById("user_id").value;
     let user_password = document.getElementById("user_password").value;
     let user_email = document.getElementById("user_email").value;
     let user_name = document.getElementById("user_name").value;
@@ -37,6 +39,8 @@ young_create_subm.addEventListener("click", function(){
 	req.onload=function(){
 		alert(req.responseText);
 	}
+	*/
+	alert("登録完了しました。");
 })
 document.getElementById("rogin_form").style.visibility = "hidden";
 document.getElementById("rogin_nav").onclick = function () {

@@ -1,6 +1,8 @@
 //OLD SUBMIT BUTTON
 var old_create_subm = document.getElementById("old_create_subm");
 old_create_subm.addEventListener("click", function(){
+	// GitHub Pagesでのモックアップのため、動的ファイルへの対応を打ち切りました.
+	/*
     let user_id = document.getElementById("user_id").value;
     let user_password = document.getElementById("user_password").value;
     let user_email = document.getElementById("user_email").value;
@@ -28,15 +30,15 @@ old_create_subm.addEventListener("click", function(){
 	};
 	let json = JSON.stringify(str);
 	let req = new XMLHttpRequest();
+
 	req.open('POST', 'https://citron-tree.jp/private/magotaku_tmp/old_create.php', true);
 	req.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-	// TODO
-	// たまに403エラーが発生する。たぶん入力内容に記号とかが入るとダメなのかも
-	// -> HTMLを平文に変換してからJSONに変えて送信する
 	req.send(json);
 	req.onload=function(){
 		alert(req.responseText);
 	}
+	*/
+	alert("登録完了しました。");
 })
 //ログインメニューの表示
 document.getElementById("rogin_form").style.visibility = "hidden";

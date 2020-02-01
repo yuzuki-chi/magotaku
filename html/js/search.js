@@ -11,6 +11,8 @@ document.getElementById("close_item").onclick = function () {
 // SEARCH TASK
 var searchTask = document.getElementById("search_task");
 searchTask.addEventListener("click", function(){
+	// GitHub Pagesでのモックアップのため、動的ファイルへの対応を打ち切りました.
+	/*
     let text = document.getElementById("search").value;
 	let str = {
 		'search_task':text, 
@@ -41,4 +43,6 @@ searchTask.addEventListener("click", function(){
 			alert(arg);
 		}
 	}
+	*/
+	location.href = "../search/searchResults.html";
 })

@@ -31,7 +31,7 @@ function rogin_nav() {
 }
 
 // cursor change --
-制作に余裕ができた時の遊び心
+// 制作に余裕ができた時の遊び心
 $cursor = 'url(https://yuzuki-chi.github.io/magotaku/html/img/cursor.gif), auto';
 var $element = document.getElementById( "cursor" );
 $element.style.cursor = $cursor;
